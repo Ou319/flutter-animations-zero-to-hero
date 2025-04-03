@@ -36,8 +36,8 @@ class _Lecture6State extends State<Lecture6> {
             ),
             AnimatedPositioned(
               duration: const Duration(milliseconds: 400),
-              top: ischnage ? 200 : 0, // حركة للأعلى والأسفل
-              right: ischnage ? 0 : 300, // حركة لليمين واليسار
+              top: ischnage ? 200 : 0, 
+              right: ischnage ? 0 : 300,
               child: SizedBox(
                 width: 180,
                 height: 180,
@@ -46,7 +46,7 @@ class _Lecture6State extends State<Lecture6> {
             ),
             AnimatedPositioned(
               duration: const Duration(milliseconds: 400),
-              bottom: ischnage ? 300 : 0, // حركة لأعلى عند التغيير
+              bottom: ischnage ? 300 : 0, 
               right: 0,
               child: SizedBox(
                 width: 180,
@@ -57,7 +57,7 @@ class _Lecture6State extends State<Lecture6> {
             AnimatedPositioned(
               duration: const Duration(milliseconds: 400),
               bottom: 0,
-              left: ischnage ? 200 : 0, // حركة لليمين عند التغيير
+              left: ischnage ? 200 : 0, 
               child: SizedBox(
                 width: 180,
                 height: 180,
@@ -70,7 +70,7 @@ class _Lecture6State extends State<Lecture6> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            ischnage = !ischnage; // إصلاح التبديل الصحيح للحالة
+            ischnage = !ischnage; 
           });
         },
         child: const Icon(Icons.play_arrow),

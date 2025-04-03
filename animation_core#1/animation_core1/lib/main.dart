@@ -3,6 +3,8 @@ import 'package:animation_core1/luctures/lecture3.dart';
 import 'package:animation_core1/luctures/lecture4.dart';
 import 'package:animation_core1/luctures/lecture5.dart';
 import 'package:animation_core1/luctures/lecture6.dart';
+import 'package:animation_core1/luctures/lecture7.dart';
+import 'package:animation_core1/luctures/lecture8.dart';
 import 'package:flutter/material.dart';
 import 'package:animation_core1/luctures/lecture1.dart';
 
@@ -108,6 +110,30 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: const Text("Lecture #6"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const Lecture7()),
+                  );
+                },
+                child: const Text("Lecture #7"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const Lecture8()),
+                  );
+                },
+                child: const Text("Lecture #8"),
               ),
             ),
           ],
