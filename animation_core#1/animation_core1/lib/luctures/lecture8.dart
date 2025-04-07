@@ -10,13 +10,13 @@ class Lecture8 extends StatefulWidget {
 class _Lecture8State extends State<Lecture8> {
   int myIndex =0;
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
-  final List<String> mylist = []; 
+  final List<String> mylist = [""]; 
 
   void Additem(){
     setState(() {
-       int index = 6; 
+      myIndex++;
       mylist.add("item $myIndex");
-       _listKey.currentState?.insertItem(index);
+       _listKey.currentState?.insertItem(myIndex);
     });
   }
   @override
