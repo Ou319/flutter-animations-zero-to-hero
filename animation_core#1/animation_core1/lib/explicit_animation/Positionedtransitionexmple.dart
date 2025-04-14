@@ -48,6 +48,7 @@ class _PositionedtransitionexmpleState extends State<Positionedtransitionexmple>
 
   @override
   void dispose() {
+    super.dispose();
     
     _controller.dispose();
   }

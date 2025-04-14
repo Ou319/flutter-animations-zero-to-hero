@@ -1,4 +1,7 @@
+import 'package:animation_core1/explicit_animation/Buildertransitionexmple.dart';
 import 'package:animation_core1/explicit_animation/Positionedtransitionexmple.dart';
+import 'package:animation_core1/explicit_animation/fadetransiationexmple.dart';
+import 'package:animation_core1/explicit_animation/rotitiontransationexmple.dart';
 import 'package:animation_core1/explicit_animation/sizeTransitionexcemple.dart';
 import 'package:animation_core1/luctures/lecture2.dart';
 import 'package:animation_core1/luctures/lecture3.dart';
@@ -160,6 +163,42 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: const Text("Size Transition Example"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const Rotitiontransationexmple()),
+                  );
+                },
+                child: const Text("Rotation Transition Example"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const Buildertransitionexmple()),
+                  );
+                },
+                child: const Text("Builder Transition Example"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const Fadetransiationexmple()),
+                  );
+                },
+                child: const Text("Fade transiation example"),
               ),
             ),
           ],
