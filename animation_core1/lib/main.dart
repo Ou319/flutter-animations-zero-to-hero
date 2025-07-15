@@ -4,6 +4,7 @@ import 'package:animation_core1/explicit_animation/fadetransiationexmple.dart';
 import 'package:animation_core1/explicit_animation/rotitiontransationexmple.dart';
 import 'package:animation_core1/explicit_animation/sizeTransitionexcemple.dart';
 import 'package:animation_core1/luctures/lecture10.dart';
+import 'package:animation_core1/luctures/lecture11.dart';
 import 'package:animation_core1/luctures/lecture2.dart';
 import 'package:animation_core1/luctures/lecture3.dart';
 import 'package:animation_core1/luctures/lecture4.dart';
@@ -225,6 +226,18 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: const Text("Animated Button Example"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const AnimationListed()),
+                  );
+                },
+                child: const Text("animationListed"),
               ),
             ),
           ],
